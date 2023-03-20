@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+                width: 100px;
+                height: 100px;
+                background-color: #bfa;
+                transition: 2s;
+                /*变形的原点 默认值 center*/
+                transform-origin: 20px 20px;
+        }
+        .box1:hover{
+            /*    
+                 对元素进行缩放的函数： 
+                 scaleX()水平方向的缩放
+                 scaleY()垂直方向的缩放
+                 scale()双方向的缩放
+
+            */
+            transform: scale(2);
+        }
+        .img-wrapper{
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+            transition: 2s;
+            background-image: url(./6020E74A6A82626B477471753CC560D4.jpg);
+            background-size: cover;
+        }
+        .img-wrapper:hover{
+            transform: scale(1.2);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="img-wrapper">
+    </div>
+    
+</body>
+</html>

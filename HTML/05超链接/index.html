@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接</title>
+</head>
+<body>
+    <!--
+        超链接可以让我们从一个页面跳转到其他页面
+        或是当前页面的其他位置
+
+        使用 a 标签定义超链接
+              属性：
+                 href 指定跳转的目标路径
+                     值可以是外部网站的地址
+                     也可以写内部页面的地址
+        超链接是一个行内元素，a 标签中可以嵌套除它自身外的各种元素
+    -->
+    <a href="https://www.baidu.com">baidu</a>
+    <!--
+        target 属性，用于指定超链接打开的位置
+              可选值：
+                    _self 默认值,当前页面打开超链接
+                    _blank 在一个新的空白中打开超链接
+    -->
+    <a href="https://www.baidu.com"target ="_blank">baidu</a>
+    <!--
+        可以直接将超链接的href属性设置为#，点击超链接后不会发生页面
+        跳转，而是转到当前页面的顶部
+
+        可以跳转页面的指定位置，只需将href属性设置为#目标元素的id属性
+
+        id 属性（唯一不重复）
+               每个标签都可以添加一个id属性
+               id 属性是元素的唯一标识，同一个页面不能出现重复的id属性
+    -->
+    <a href="#bottom">11</a>
+    <p id ='bottom'>sadasdasdasdas</p>
+    <p>casdcsacasa</p>
+</body>
+</html>

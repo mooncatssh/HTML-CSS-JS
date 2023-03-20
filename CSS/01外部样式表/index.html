@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <!--
+        内部样式表
+        也可以将css样式编写到head中的style标签里
+        将样式表编写的style标签中，然后通过css选择器选中指定元素
+        然后可以同时为这些元素一起设置样式，可以复用
+    <style type="text/css">
+        p{
+            color: aqua;
+            font-size: 40px;
+        }
+    </style> -->
+
+    <!--
+        还可以将样式表编写到外部的css文件中，然后通过link标签将外部的css文件引入到当前页面中，
+        
+        将css样表统一编写到外部的样式表中，完全使结构和表现分离，可以加快浏览器缓存，最推荐使用外部的css文件
+    -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>cxy</h1>
+    <p>这是一个test</p>
+    
+</body>
+</html>
